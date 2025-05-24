@@ -4,7 +4,7 @@ Name of School or Institution: Meghnad Saha Institute of Technology
 Course Number and Name: Project
 Instructor: Ms. Tanushree Chakraborty, Assistant Professor, CSE Dept.
  
-Authors
+Authors:
 Mohini Brahma (14200121194)
 Arunangshu Garai (14200121189)
 Diptimoy Hazra (14200121207)
