@@ -1,0 +1,9 @@
+This folder will contain sign language images for each letter/character.
+
+Naming convention:
+- Lowercase letters: a.png, b.png, c.png, etc.
+- Numbers: 0.png, 1.png, 2.png, etc.
+- Space: space.png
+- Unknown characters: unknown.png
+
+Images should be clear, with consistent dimensions (recommended 200x200 pixels).

@@ -1,0 +1,321 @@
+/* Add responsive design and accessibility improvements */
+.text-to-sign-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-to-sign-container h2 {
+  color: #2196f3;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.offline-indicator {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-form {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.input-group textarea:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
+.speed-control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.speed-control label {
+  margin-right: 10px;
+  min-width: 200px;
+}
+
+.speed-control input[type="range"] {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.speed-value {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.convert-button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.convert-button:hover {
+  background-color: #0d8aee;
+}
+
+.convert-button:focus {
+  outline: 3px solid #90caf9;
+  outline-offset: 2px;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.sign-display {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.sign-display h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.sign-content {
+  min-height: 200px;
+}
+
+.current-sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sign-image {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.placeholder-sign {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2196f3;
+}
+
+.sign-word {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.playback-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.play-button, .pause-button, .reset-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.play-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.play-button:hover {
+  background-color: #43a047;
+}
+
+.pause-button {
+  background-color: #ff9800;
+  color: white;
+}
+
+.pause-button:hover {
+  background-color: #f57c00;
+}
+
+.reset-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.reset-button:hover {
+  background-color: #e53935;
+}
+
+.play-button:focus, .pause-button:focus, .reset-button:focus {
+  outline: 3px solid rgba(0, 0, 0, 0.2);
+  outline-offset: 2px;
+}
+
+.progress-indicator {
+  text-align: center;
+}
+
+.progress-indicator span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #2196f3;
+  transition: width 0.3s ease;
+}
+
+.no-signs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #757575;
+  text-align: center;
+  font-style: italic;
+}
+
+.instructions {
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.instructions h3 {
+  margin-top: 0;
+  color: #2e7d32;
+}
+
+.instructions ol {
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .text-to-sign-container {
+    padding: 10px;
+  }
+  
+  .speed-control {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .speed-control label {
+    margin-bottom: 8px;
+  }
+  
+  .playback-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .play-button, .pause-button, .reset-button {
+    width: 100%;
+  }
+}
+
+/* High contrast mode for accessibility */
+@media (prefers-contrast: high) {
+  .text-to-sign-container h2,
+  .placeholder-sign {
+    color: #000;
+  }
+  
+  .convert-button,
+  .play-button,
+  .pause-button,
+  .reset-button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  
+  .input-group textarea,
+  .sign-image {
+    border: 2px solid #000;
+  }
+  
+  .progress-bar {
+    border: 1px solid #000;
+  }
+  
+  .progress-fill {
+    background-color: #000;
+  }
+  
+  .instructions {
+    background-color: #fff;
+    border: 2px solid #000;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .progress-fill {
+    transition: none;
+  }
+}
